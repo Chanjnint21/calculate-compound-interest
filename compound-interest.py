@@ -1,8 +1,7 @@
-#What left to do: entermonth's interest, enter tota earn interest, loop code
 print("F = A[(1+W/1200) + (1+W/1200)**2 + (1+W/1200)**3 + (1+W/1200)**4 + (1+W/1200)**5)]")
 def funtion01():
   A = float(input("Enter Deposite:"))
-  W = float(input("Enter interest Rate:"))
+  W = float(input("Enter interest Rate per year:"))
   x = float(input("Enter Deposite in month:"))
   #Total Deposite
   A1 = A
@@ -40,4 +39,3 @@ while True:
   else:
     print("Thank You")
     break 
-
