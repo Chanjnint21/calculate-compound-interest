@@ -28,7 +28,6 @@ funtion()
 # Ask the user if they want to redo the compound interest
 while True:
   if input("\nDo you want to calulate again? (y/n):") == "y":
-    print("")
     funtion()
   else:
     print("Thank You!")
