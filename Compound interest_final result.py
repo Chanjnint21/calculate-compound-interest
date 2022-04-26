@@ -6,6 +6,7 @@ def funtion():
   
   #Arange the position of value and string
   print ("\n{:<7} {:<10} {:<17} {:<25} {:<25} {:<25}".format('Month','Deposite','total Deposite', "This Month's interest", 'Total-interest Earned', 'Total-value to-Date'))
+  print('─' * 110)
   int0 = 0
   for i in range(t):
     month = i+1
@@ -22,13 +23,15 @@ def funtion():
     month_int   = "{:.2f}".format(month_int)
     total_int   = "{:.2f}".format(total_int)
     total_value = "{:.2f}".format(total_value)
-    print ("\n{:<9} {:<14} {:<20} {:<23} {:<25} {:<28}".format( month, deposite, total_dep, month_int, total_int, total_value))
+    print ("{:<7} {:<12} {:<18} {:<23} {:<25} {:<28}".format( month, deposite, total_dep, month_int, total_int, total_value))
+    print('─' * 110)
 funtion()
 
 # Ask the user if they want to redo the compound interest
 while True:
   if input("\nDo you want to calulate again? (y/n):") == "y":
+    print('--' * 20)
     funtion()
   else:
     print("Thank You!")
-    break 
+    break
