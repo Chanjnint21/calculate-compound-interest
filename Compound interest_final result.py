@@ -1,4 +1,4 @@
-def funtion():
+def Funtion():
   #Ask user to type the amount of Deposite, interest rate, months
   A = float(input("Enter Deposite Amount:"))
   W = float(input("Enter interest Rate:"))
@@ -25,13 +25,13 @@ def funtion():
     total_value = "{:.2f}".format(total_value_date)
     print ("{:<7} {:<12} {:<18} {:<27} {:<28} {:<28}".format( month, deposite, total_dep, month_int, total_int, total_value))
     print('─' * 110)
-funtion()
+Funtion()
 
 # Ask the user if they want to redo the compound interest
 while True:
   if input("\nDo you want to calulate again? (y/n):") == "y":
     print('--' * 20)
-    funtion()
+    Funtion()
   else:
     print("Thank You!")
     break 
